@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidepart">
+        <div class="logo">
+            <img src="media/logo.png">
+            <p>ODIN</p>
+        </div>
+        <div class="footer">
+            Photo by <a href="">Halle West</a> on <a href="https://unspash.com">Unsplash</a>
+        </div>
+    </div>
+    <section>
+        <div class="intro pad">
+            <p>
+                This is not a real online service! You know you need something like this in 
+                your life to help you realize your deepest dreams. <br>
+                Sign up <i>now</i> to get started.
+            </p>
+            <p>
+                You <i>know</i> you want to.
+            </p>
+        </div>
+        <div class="form pad">
+            <h2>Let's do this!</h2>
+            <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="post" id="form">
+                <div class="form-field">
+                    <legend>FIRST NAME</legend>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+                <div class="form-field">
+                    <legend>LAST NAME</legend>
+                    <input type="text" name="last-name" id="last-name" required>
+                </div>
+                <div class="form-field">
+                    <legend>EMAL</legend>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-field">
+                    <legend>PHONE NUMBER</legend>
+                    <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="+1 123 456 7890" required>
+                </div>
+                <div class="form-field">
+                    <legend>PASSWORD</legend>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-field">
+                    <legend>CONFIRM PASSWORD</legend>
+                    <input type="password" name="confirm" id="confirm" required>
+                </div>
+            </form>
+        </div>
+        <div class="action pad">
+            <button type="submit" form="form">Create Account</button>
+            <p>Already have an account? <a href="" class="login">Log In</a></p>
+        </div>
+    </section>
+</body>
+</html>

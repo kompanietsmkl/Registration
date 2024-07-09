@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Norse";
+    src: url(/fonts/Norse-Bold.otf)   ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    font-family: 'Arimo', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+.sidepart{
+    background-image: url(media/bg.jpg);
+    background-size: cover;
+    background-position: right;
+    width: 30%;
+    .logo{
+        font-family: "Norse";
+        position: relative;
+        top: 20%;
+        height: 125px;
+        background-color: rgba(0, 0, 0, 0.4) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80px;
+        img{
+            height: 80%;
+        }
+    }
+    .footer{
+        width: inherit;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        padding-bottom: 20px;
+        opacity: 0.9;
+        a{
+            color: #fff;
+        }
+    }
+}
+
+section{
+    width: 70%;
+    padding: 100px 0;
+    background-color: #f9fafb;
+    color: black;
+    .pad{
+        padding-left: 40px !important;
+    }
+    .intro{
+        font-weight: 600;
+        font-size: 1.3rem;
+        max-width: 700px;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+    .form{
+        background-color: #fff;
+        padding: 20px 0;
+        h2{
+            margin: 0;
+            font-size: 1.3rem;
+        }
+    }
+    form{
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 50px;
+        padding: 15px 0;
+        legend{
+            color: #646b75;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        input{
+            width: 250px;
+            padding: 5px 10px;
+            font-size: 1em;
+            border: 1px solid #E5E7EB;
+            border-radius: 5px;
+            &:focus{
+                outline: 1px solid blue;
+            }
+            &:invalid{
+                border-color: red;
+            }
+        }
+    }
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    button{
+        width: 220px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 13px 0;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        background-color: #596D48;
+        color: #fff;
+        &:hover,
+        &:focus{
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid #596D48;
+            color: #596D48;
+            transition: 300ms all;
+        }
+    }
+    p{
+        margin-top: 30px;
+        font-weight: 600;
+        .login{
+            color: #596D48;
+        }
+        a{text-decoration: none;}
+    }
+
+}
